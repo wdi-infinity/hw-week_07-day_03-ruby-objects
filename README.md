@@ -10,6 +10,7 @@ Create a program that models a subway system.
 The program takes the line and stop that a user is getting on at and the line and stop that user is getting off at and prints the journey and the total number of stops for the trip in the console:
 
 There are 3 subway lines:
+
 **Red line**
 - South Station
 - Park Street
