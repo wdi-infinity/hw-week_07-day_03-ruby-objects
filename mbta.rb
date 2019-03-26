@@ -5,12 +5,12 @@
 
   class Subway
    attr_accessor:lines;
-   attr_accessor:movei;
+   attr_accessor:move;
 
   def initialize(line,station_way,movei)
   @line=line;
   @station=station_way;
-  @movei=0;
+  @move=0;
   end
 
   def stops_between_stations(start_line, start_station, end_line, end_station)
@@ -40,14 +40,14 @@ class Station <Subway
 end
 
 def travel
-  @movei=@movei+1;
+  @move=@move+1;
 end 
 
 #Tell the user the number of stops between stations AND the stops IN ORDER that they will pass through or change at.
 mbta = Subway.new('Red', 'South Station',"Park Street", 'Green', 'Kenmore') 
-mbta.movei
-mbta.movei
-mbta.movei
+mbta.move
+mbta.move
+mbta.move
 
 "Your trip continues through the following stops on Green Line:" 
 
